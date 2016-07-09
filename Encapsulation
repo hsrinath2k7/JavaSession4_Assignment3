@@ -1,0 +1,109 @@
+// EmployeeDetails.java
+
+public class EmployeeDetails {
+	
+	private String employeeName;
+	private int employeeId;
+	private String employeeRole;
+	private String employeeDepartment;
+	private int employeeAge;
+	
+	
+	public EmployeeDetails(String name, int id, String role, String dept, int age)
+	{
+		employeeName = name;
+		employeeId = id;
+		employeeRole = role;
+		employeeDepartment = dept;
+		employeeAge = age;
+		
+	}
+
+
+	public String getEmployeeName() {
+		return employeeName;
+	}
+
+
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
+	}
+
+
+	public int getEmployeeId() {
+		return employeeId;
+	}
+
+
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
+
+
+	public String getEmployeeRole() {
+		return employeeRole;
+	}
+
+
+	public void setEmployeeRole(String employeeRole) {
+		this.employeeRole = employeeRole;
+	}
+
+
+	public String getEmployeeDepartment() {
+		return employeeDepartment;
+	}
+
+
+	public void setEmployeeDepartment(String employeeDepartment) {
+		this.employeeDepartment = employeeDepartment;
+	}
+
+
+	public int getEmployeeAge() {
+		return employeeAge;
+	}
+
+
+	public void setEmployeeAge(int employeeAge) {
+		this.employeeAge = employeeAge;
+	}
+	
+	
+
+}
+
+// EmployeeDetailsPrint.java
+
+package Assignment4;
+
+public class EmployeeDetailsPrint {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		EmployeeDetails empdet = new EmployeeDetails("John", 344, "Software Engineer", "IT", 26);
+		
+		System.out.println("Employee Details");
+		System.out.println("==============================================================" );
+		
+		System.out.println("Name of the Employee: " + empdet.getEmployeeName());
+		System.out.println("ID of the Employee: " + empdet.getEmployeeId());
+		System.out.println("Role of the Employee: " + empdet.getEmployeeRole());
+		System.out.println("Department of the Employee: " + empdet.getEmployeeDepartment());
+		System.out.println("Age of the Employee: " + empdet.getEmployeeAge());
+
+	}
+
+}
+
+/* Output
+Employee Details
+==============================================================
+Name of the Employee: John
+ID of the Employee: 344
+Role of the Employee: Software Engineer
+Department of the Employee: IT
+Age of the Employee: 26
+
+*/
